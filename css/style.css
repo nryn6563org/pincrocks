@@ -952,10 +952,10 @@ header {
 button.aply {
   position: fixed;
   bottom: 0px;
-  left: 0px;
   display: flex;
   height: 56px;
   width: 100%;
+  max-width: 375px;
   align-items: center;
   justify-content: center;
   gap: 0.75rem;
