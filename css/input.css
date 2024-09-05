@@ -132,7 +132,7 @@ header{
 
 /* apply */
 button.aply{
-  @apply fixed bottom-0 left-0 w-full h-[56px] flex gap-3 items-center justify-center bg-[#FF505A]
+  @apply fixed bottom-0 w-full max-w-[375px] h-[56px] flex gap-3 items-center justify-center bg-[#FF505A]
 }
 button.aply span{
   @apply text-white text-[18px] leading-[18px] font-[700] font-SBAggro
