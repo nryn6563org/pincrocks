@@ -1,0 +1,203 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* reset */
+* {
+  @apply font-pre;
+}
+em {
+  @apply not-italic;
+}
+
+#wrap{
+  @apply w-full max-w-[375px] mx-auto pb-[56px]
+}
+
+/* header */
+header{
+  @apply w-full h-10 flex px-[18px] justify-between items-center
+}
+
+/* content */
+.visualTop {
+  height:354px;
+  background: linear-gradient(136deg, #e5dfff 5.75%, #cdedff 96.62%);
+}
+.visualTop .event {
+  border-radius: 14px;
+  background: linear-gradient(93deg, #566ff4 1.24%, #7a3cff 99.37%);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.visualTop .box{
+  @apply block w-full h-full bg-[url(../img/visualTop.png)] bg-[length:364px_250px] bg-[4px_61px] bg-no-repeat
+}
+.visualTop .box .tit{
+  @apply w-full pt-10 flex flex-col gap-2.5 items-center
+}
+.visualTop .box .tit strong{
+  @apply text-[32px] text-[#0c0c20] leading-[28px] font-SBAggro
+}
+.visualTop .box .tit em{
+  @apply font-bold font-SBAggro
+}
+.visualTop .box .tit span{
+  @apply text-[15px] leading-4 font-SBAggro text-[#0c0c20] font-light relative flex gap-[2px]
+}
+.visualTop .box .tit span em{
+  @apply font-[500] font-SBAggro px-[1px] relative z-20
+  after:absolute after:content-[''] after:w-full after:h-2 after:bg-[#D5CCFF] after:bottom-[2px] after:right-[1px] after:z-[-1]
+}
+
+.visualTop .event{
+  @apply w-[346px] h-[102px] mx-auto mt-[143px] px-4 flex flex-col items-center justify-center
+}
+.visualTop .event strong{
+  @apply w-full text-center pb-2 pt-4 relative font-SBAggro text-white font-bold text-[14px] leading-[14px]
+  after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-[1px] after:bg-white after:bg-opacity-20
+}
+.visualTop .event > div{
+  @apply flex w-full justify-around items-center h-[60px]
+}
+.visualTop .event > div span{
+  @apply text-center text-[12px] leading-[14px] text-white
+}
+.visualTop .event > div span em{
+  @apply font-[800]
+}
+
+
+/* pNumSection */
+.pNumSection{
+  @apply w-full bg-[#0E1833] p-[24px_28px] flex flex-col gap-4
+}
+.pNumSection strong{
+  @apply w-full text-white font-SBAggro text-[16px] font-light
+}
+.pNumSection > div{
+  @apply w-full
+}
+.pNumSection > div label{
+  @apply flex flex-col w-full gap-3
+}
+.pNumSection > div label span{
+  @apply text-[14px] text-white font-[800]
+}
+.pNumSection > div input[type="text"]{
+  @apply w-full h-[54px] rounded-[10px] border-[3px] border-[#85A0FF] bg-white text-center text-[16px]
+  placeholder:text-[#6879AD]
+}
+
+/* pvAgSection */
+.pvAgSection{
+  @apply w-full p-[32px_28px]
+}
+.pvAgSection .box{
+  @apply w-full h-[304px] border-[1px] border-[#B1B5C3] rounded-[10px] px-4 py-6 flex flex-col
+}
+.pvAgSection .box .top{
+  @apply flex flex-col gap-2 pb-4 border-b-[1px] border-[#b1b5c3]
+}
+.pvAgSection .box .top strong{
+  @apply text-[16px] leading-[16px] text-[#2D2E36] font-[800]
+}
+.pvAgSection .box .top span{
+  @apply text-[14px] leading-[14px] text-[#2D2E36] font-[600]
+}
+.pvAgSection .box .txt{
+  @apply w-full py-4 border-b-[1px] border-[#b1b5c3] flex flex-col
+}
+.pvAgSection .box .txt strong{
+  @apply text-[14px] leading-4 text-[#2d2e36] font-[800]
+}
+.pvAgSection .box .txt span{
+  @apply text-[12px] leading-4 text-[#2d2e36] pt-1
+}
+.pvAgSection .box .txt span em{
+  @apply flex gap-2 text-[12px] leading-4 text-[#2d2e36]
+  before:content-['-'] before:pl-2
+}
+.pvAgSection .box .chk{
+  @apply pt-4 w-full 
+}
+.pvAgSection .box .chk label{
+  @apply flex w-full items-center gap-3
+}
+.pvAgSection .box .chk label input{
+  @apply w-4 h-4 border-[2px] border-[#2D2E36]
+}
+.pvAgSection .box .chk label span{
+  @apply text-[14px] text-[#2D2E36] font-[800] leading-4
+}
+
+/* apply */
+button.aply{
+  @apply fixed bottom-0 left-0 w-full h-[56px] flex gap-3 items-center justify-center bg-[#FF505A]
+}
+button.aply span{
+  @apply text-white text-[18px] leading-[18px] font-[700] font-SBAggro
+}
+
+/* footer */
+footer{
+  @apply w-full bg-[#F2F5F9] p-[24px_16px] flex flex-col gap-3
+}
+footer strong{
+  @apply text-[14px] text-[#2d2e36] font-SBAggro font-[700] leading-4
+}
+footer .gde{
+  @apply w-full flex flex-col gap-2
+}
+footer .gde span{
+  @apply flex gap-1 text-[12px] leading-[14px] text-[#2d2e36]
+  before:content-['\00b7'] before:pl-1 before:font-bold
+}
+
+
+/* modal */
+.modal{
+  @apply fixed inset-0 w-full h-full z-20
+}
+.modal-dialog{
+  @apply w-full h-full flex justify-center items-center
+}
+.modal-content{
+  @apply w-[320px] bg-white rounded-[20px]
+}
+.modal-header{
+  @apply w-full flex justify-end p-[24px_24px_0]
+}
+.modal-body{
+  @apply w-full px-2.5 pt-10
+}
+.modal-footer{
+  @apply w-full p-[30px_40px_40px]
+}
+.modal-backdrop{
+  @apply flex inset-0 z-10 bg-black w-full h-full fixed bg-opacity-70
+}
+.fade{
+  @apply opacity-0 transition-all duration-300
+}
+.fade.show{
+  @apply opacity-100
+}
+.fade .modal-content{
+  @apply mt-[-50px] transition-all duration-500
+}
+.fade.show .modal-content{
+  @apply mt-0
+}
+.modal-box{
+  @apply flex flex-col w-full gap-5
+}
+.modal-box strong{
+  @apply text-[20px] text-center font-semibold text-[#0c0c20] leading-6
+}
+.modal-box p{
+  @apply w-full h-[65px] border-[1px] border-[#dbdbdb] flex items-center justify-center text-[14px] text-[#495062] font-medium
+}
+
+.modal-footer button{
+  @apply w-full h-[56px] rounded-full text-[16px] font-semibold text-white bg-[#4260FF]
+}
